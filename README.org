@@ -1,0 +1,15 @@
+* Visuals
+
+A collection of packages to produce various visuals.
+
+** Usage
+
+** Installation
+
+** Author
+
++ Vladimir DIkan (vdikan@vivaldi.net)
+
+** Copyright
+
+Copyright (c) 2020 Vladimir DIkan (vdikan@vivaldi.net)
