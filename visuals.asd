@@ -4,6 +4,7 @@
   :license "GPL"
   :depends-on ("cl-who"
                "parenscript"
+               "websocket-driver"
                "clack")
   :components ((:module "src"
                 :components
