@@ -1,15 +1,21 @@
 * Visuals
 
-A collection of packages to produce various visuals.
+A collection of utiity packages for visual stuff, written in Lisp.
+
+As it seems, nothing beats in-browser Js systems for plotting and drawing.
+
+Inspirations:
+
+ * [[https://vega.github.io/vega-lite/][Vega-Lite]] plotting grammar system:
+   nice looks, and it is easy to setup [[https://bl.ocks.org/domoritz/8e1e4da185e1a32c7e54934732a8d3d5][with data coming from WebSockets]]
+ * [[https://github.com/byulparan/websocket-demo][This demo]] of injecting REPL from CL+Parenscript to Js console,
+   itself as well as its aim to create interactive WebGL scene.
 
 ** Usage
 
-** Installation
+See ~.lisp~ sources in ~/examples~
 
-** Author
+** TODOs
 
-+ Vladimir DIkan (vdikan@vivaldi.net)
-
-** Copyright
-
-Copyright (c) 2020 Vladimir DIkan (vdikan@vivaldi.net)
+ * understand routing of ~Clack~ apps
+ * ~ws-repl~ improvements: command IDs, error-handlings
