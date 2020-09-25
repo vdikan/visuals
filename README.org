@@ -7,7 +7,8 @@ As it seems, nothing beats in-browser Js systems for plotting and drawing.
 Inspirations:
 
  * [[https://vega.github.io/vega-lite/][Vega-Lite]] plotting grammar system:
-   nice looks, and it is easy to setup [[https://bl.ocks.org/domoritz/8e1e4da185e1a32c7e54934732a8d3d5][with data coming from WebSockets]]
+   nice looks, and it is easy to setup [[https://bl.ocks.org/domoritz/8e1e4da185e1a32c7e54934732a8d3d5][with data coming from WebSockets]].
+   (I actually found out about Vega when ran into [[https://github.com/kilimanjaro/plotsdam][Plotsdam]], a thin wrapper over it)
  * [[https://github.com/byulparan/websocket-demo][This demo]] of injecting REPL from CL+Parenscript to Js console,
    itself as well as its aim to create interactive WebGL scene.
 
