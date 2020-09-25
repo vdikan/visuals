@@ -17,4 +17,14 @@
     (chain x (append-child txt))
     (chain document body (append-child x))))
 
+
+(in-ws-repl                             ; <- local scope var
+  (let ((nv (create d (new (-date)))))
+    (@ nv d)))
+
+
+(in-ws-repl                             ; <- global var declaration
+  (funcall (lambda () (setf (@ window dat) (new (-date))))))
+
+
 (shutdown-ws-repl)                      ; <- finish consing into Js

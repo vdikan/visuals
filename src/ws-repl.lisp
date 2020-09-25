@@ -58,14 +58,20 @@
 ;; Client App page:
 (defpsmacro install-websock (port)
   `(progn
-     (defvar socket (new (-web-socket (lisp (format nil "ws://127.0.0.1:~a/repl" ,port)))))
+     ;; https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval
+     (defun loose-json-parse (obj)      ; <- better `eval` without `eval`
+       (funcall (-function (+ "\"use strict\";return " obj))))
+
+     (defvar socket
+       (new (-web-socket (lisp (format nil "ws://127.0.0.1:~a/repl" ,port)))))
+
      (setf (chain socket onopen)
            (lambda () (chain console (log "Connecting to WS server..."))))
      (setf (chain socket onmessage)
            (lambda (msg)
              (chain console (log "In recieved:"))
              (chain console (log (@ msg data)))
-             (let* ((json (eval (@ msg data))))
+             (let* ((json (loose-json-parse (@ msg data))))
                (try (progn (setf result json))
                     (:catch (error)
                       (setf result error))
