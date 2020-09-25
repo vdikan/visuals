@@ -5,10 +5,12 @@
   :depends-on ("cl-who"
                "parenscript"
                "websocket-driver"
+               "websocket-driver-client"
                "clack")
   :components ((:module "src"
                 :components
-                ((:file "vis-vega")
+                ((:file "ws-repl")
+                 (:file "vis-vega")
                  (:file "vis-webgl"))))
   :description "A collection of packages to produce various visuals.")
   ;; :in-order-to ((test-op (test-op "visuals/tests"))))

@@ -1,4 +1,4 @@
-(ql:quickload '(:visuals ::websocket-driver-client :jonathan))
+(ql:quickload '(:visuals :websocket-driver-client :jonathan))
 
 (defpackage :vis-vega-websocket
   (:use :cl :vis-vega :ps))
