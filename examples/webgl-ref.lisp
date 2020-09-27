@@ -1,12 +1,12 @@
-(ql:quickload '(:cl-who :parenscript :clack))
+;; Package for reference example: no WebSockets
 
-(defpackage :vis-webgl
+(defpackage :webgl-ref
   (:use :cl :parenscript :clack)
   (:export
    #:vis-webgl-page
    #:handle-webgl))
 
-(in-package :vis-webgl)
+(in-package :webgl-ref)
 
 (setf (cl-who:html-mode) :html5)
 (setq cl-who:*attribute-quote-char* #\")

@@ -1,7 +1,9 @@
+;; Reference TWGL tiny example: no WebSockets
 (ql:quickload :visuals)
+(load #P"./webgl-ref.lisp")
 
 (defpackage :glexp
-  (:use :cl :vis-webgl :ps))
+  (:use :cl :webgl-ref :ps))
 
 (in-package :glexp)
 

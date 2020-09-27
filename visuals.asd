@@ -1,6 +1,6 @@
 (defsystem "visuals"
   :version "0.1.0"
-  :author "Vladimir DIkan"
+  :author "Vladimir Dikan"
   :license "GPL"
   :depends-on ("cl-who"
                "parenscript"
@@ -10,8 +10,9 @@
   :components ((:module "src"
                 :components
                 ((:file "ws-repl")
-                 (:file "vis-vega")
-                 (:file "vis-webgl"))))
+                 (:file "js-utils")
+                 ;; (:file "vis-webgl")
+                 (:file "vis-vega"))))
   :description "A collection of packages to produce various visuals.")
   ;; :in-order-to ((test-op (test-op "visuals/tests"))))
 
