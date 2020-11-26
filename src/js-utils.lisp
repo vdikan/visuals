@@ -6,6 +6,7 @@
      #:define-jsfun
      ;; dom
      #:c>
+     #:log>
      #:by-id
      #:by-tagname
      #:create-element
